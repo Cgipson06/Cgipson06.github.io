@@ -24,7 +24,7 @@ hr{
   border-width: 10px;
   border-style:   solid;
   border-color:   #22313f;
-  margin: 50px auto;
+  margin: 50px auto 100px auto;
 }
 
 .welcome {
@@ -42,7 +42,7 @@ hr{
 .welcome_deets{
  color: white;
  text-align: center;
- margin-top: 100px;
+ margin: 100px 0;
 }
 
 .title_line {
