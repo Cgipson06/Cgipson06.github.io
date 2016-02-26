@@ -113,6 +113,7 @@ hr{
     border: 1px solid black;
     min-height: 535px;
     border-radius: 4px;
+    background-color: #22313f;
 }
 
 .app > a {
