@@ -36,11 +36,11 @@ li
 }
 
 .bg-image {
-  background: url('../images/stars.jpg') no-repeat top right; 
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  background: url('../images/stars2.jpg') no-repeat top right; 
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
   z-index:1;
   margin-bottom:50px;
   position:relative;
@@ -89,13 +89,15 @@ li
 }
 
 /* for name and occupation-city areas */
-.welcome_deets{
+.welcome-deets{
  text-align: center;
  margin-top: 100px;
 }
 
+
+
 /* upping the title of each section */
-.title_line {
+.title-line {
     font-size: 32pt;
 }
 
@@ -143,7 +145,7 @@ li
     font-weight: bold;
 }
 /* goes around app screenshot */
-.app_wrap{
+.app-wrap{
     background-color: white;
     width: 90%;
     border: 1px solid black;

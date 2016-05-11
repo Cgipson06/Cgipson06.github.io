@@ -46,7 +46,7 @@
 
         <div class="container-fluid splash">
             <div class="row ">
-                <div  class="welcome_deets col-md-2 col-md-offset-2">
+                <div  class="welcome-deets col-md-2 col-md-offset-2">
                     <h2 class="fuzzier">Cody Gipson</h2>
                 </div>     
                 <div class="col-md-4">
@@ -54,7 +54,7 @@
                         <div class="welcome"></div>
                     </div>
                 </div>
-                <div class="welcome_deets col-md-2">
+                <div class="welcome-deets col-md-2">
                     <h3 class="fuzzier">Developer<small style="color: inherit;"> in Austin Texas </small></h3>
                 </div>
                 <div class="col-md-2 col-sm-12" style="margin-bottom:50px"></div> 
@@ -64,34 +64,48 @@
         
 
         <div id="about" class="nav-fix container-fluid background-panel">
-            <h1 class= "title_line fuzz">About Me</h1> 
+            <h1 class= "title-line fuzz">About Me</h1> 
             <hr>
             <p class="fuzz">I'm a web application developer based in Austin Texas.  I am comfortable and experienced in Ruby and Ruby on Rails, Javascript, as well as HTML/CSS, and also enjoy working with python and various web frameworks. I have a natural attraction to the possibilities and complexities that come with working on the backend of a project, as well a passion for making impactful and functional products on the front end side of projects.  I am currently looking for a full time developer position in the local Austin metro that will both challenge me and offer opportunity for growth. In my free time I enjoy rebuilding vintage motorcycles and spending time outside with my family.</p>
         </div><!-- end about me -->
         
         <div id="examples" class="nav-fix background-panel container-fluid">
-            <h1 class="title_line fuzz">Example Applications</h1>
+            <h1 class="title-line fuzz">Example Applications</h1>
             <hr>
-                    
-            <div class="app col-md-6 col-md-offset-3">
-                <a href="http://www.atxgreenbelt.com"><img src="images/Greenbelt.png"  alt="website screenshot"  class="app_wrap"></a>
+            <div class="app col-md-4 col-md-offset-2">
+                <a href="https://sleepy-fjord-79942.herokuapp.com"><img src="images/Texas.png" alt="website screenshot" class="app-wrap"></a>
+                <div class="appdetails">
+                    <div class="app-title text-center">
+                        <h1>Texas Historical Markers</h1>
+                    </div>
+                    <ul class="fuzz">
+                        <li><a href="https://sleepy-fjord-79942.herokuapp.com">Click here to see it running on Heroku</a></li>
+                        <li>12k+ Historical Markers searchable and displayed inside google maps</li>
+                        <li>Searchable by location using HTML5 Geolocation or Google reverse geocoding </li>
+                        <li>Data provided by the State of Texas, which I converted from UTM to GPS</li>
+                        <li>Ruby on Rails and PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>       
+            <div class="app col-md-4">
+                <a href="http://www.atxgreenbelt.com"><img src="images/Greenbelt.png"  alt="website screenshot"  class="app-wrap"></a>
                 <div class="appdetails">
                     <div class="app-title text-center">
                         <h1>ATX Greenbelt</h1>
                     </div>
                     <ul class="fuzz">
-                        <li>JavaScript + JQuery + Bootstrap</li>
+                        <li><a href="http://www.atxgreenbelt.com">Click here to see it at www.ATXgreenbelt.com</a></li>
                         <li>Utilizes USGS water API for current condition @ Barton Creek Greenbelt</li>
                         <li>Instagram photos of swimming locations via <a href="http://websta.me/">websta.me</a></li>
                         <li>Medium and Large screen navigation via <a href="http://wheelnavjs.softwaretailoring.net/index.html">WheelNav.js</a></li>
                         <li>Charting of USGS data via <a href="http://www.highcharts.com/">Highcharts.js</a></li>
-                        <li><a href="http://www.atxgreenbelt.com">Click here to see it at www.atxgreenbelt.com</a></li>
+                        <li>JavaScript + JQuery + Bootstrap</li>
                     </ul>
                 </div>    
             </div><!-- end col-md-6 -->
                  
             <div class="app col-md-4">
-                <a href="https://arcane-shore-4106.herokuapp.com/"><img src="images/flightbooker_preview.png" alt="website screenshot"  class="app_wrap"></a>
+                <a href="https://arcane-shore-4106.herokuapp.com/"><img src="images/flightbooker_preview.png" alt="website screenshot"  class="app-wrap"></a>
                 <div class="appdetails">
                     <div class="app-title text-center">
                         <h1>Flight Booker</h1>
@@ -107,7 +121,7 @@
             </div>  <!-- end col-md-4 -->
                         
             <div class="app col-md-4">
-                <a href="http://vast-forest-5750.herokuapp.com/"><img src="images/odin-facebook_preview.png" alt="website screenshot" class="app_wrap"></a>
+                <a href="http://vast-forest-5750.herokuapp.com/"><img src="images/odin-facebook_preview.png" alt="website screenshot" class="app-wrap"></a>
                 <div class="appdetails"> 
                     <div class="app-title text-center">
                         <h1>Facebook clone</h1>
@@ -126,7 +140,7 @@
             </div><!-- end col-md-4 -->
                
             <div class=" app col-md-4">
-                <a href="http://protected-caverns-3592.herokuapp.com/"><img src="images/FaceAPIPlayground.png" alt="website screenshot" class="app_wrap"></a>
+                <a href="http://protected-caverns-3592.herokuapp.com/"><img src="images/FaceAPIPlayground.png" alt="website screenshot" class="app-wrap"></a>
                 <div class="appdetails">     
                     <div class="app-title text-center">
                         <h1>FaceAPI Playground</h1>
@@ -145,7 +159,7 @@
         </div> <!--  end examples -->        
 
         <div id="resume" class="resume container-fluid fuzz background-panel nav-fix">
-            <h1 class="title_line">Experience</h1>
+            <h1 class="title-line">Experience</h1>
             <div class="text-center resume">
                 <hr>      
                 <p>
@@ -183,7 +197,7 @@
                   
         
         <div id="contact" class="container fuzz background-panel">
-            <h1 class="text-left title_line">Contact Me</h1>
+            <h1 class="text-left title-line">Contact Me</h1>
             <hr>
             <p>Thanks for checking me out! I welcome and value any comments you may have.</p>
             <form action="//formspree.io/Cgipson06@Yahoo.com" method="POST" class="contactform">
@@ -199,11 +213,11 @@
     
     <div id="footer" class="navbar-inverse background-panel">      
         <div class="github pull-left">
-            <a target="_blank" href="http://www.github.com/cgipson06"><img  class="github-logo" src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
+            <a target="_blank" href="http://www.github.com/cgipson06"><img  class="github-logo contact-me-icon" src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
         </div>
         
-        <div class="email pull-right"><a target="_blank" href="mailto:Cgipson06@Yahoo.com"><span class="glyphicon glyphicon-envelope"></span></a></div>
-        <div class="text-center linkedin"><a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba"><img src="images/Logo-White-54px-TM.png" alt="linkedin logo"></a></div>
+        <div class="email pull-right"><a target="_blank" href="mailto:Cgipson06@Yahoo.com"><span class="glyphicon glyphicon-envelope contact-me-icon"></span></a></div>
+        <div class="text-center linkedin contact-me-icon"><a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba"><img src="images/Logo-White-54px-TM.png" alt="linkedin logo"></a></div>
 
     </div><!-- end footer -->
           
