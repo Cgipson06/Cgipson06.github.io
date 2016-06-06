@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cody Gipson</title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:700,600,500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:900,700,600,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link href="styles/portfolio.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
@@ -19,6 +19,7 @@
   </head>
 
   <body>
+    
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -27,214 +28,175 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Cody Gipson</a>
+          <a class="navbar-brand" href="#cody">Cody Gipson</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><a href="#about">About</a></li>
             <li><a href="#examples">Examples</a></li>
-            <li><a href="#resume">Experience</a></li>
             <li><a href="#contact">Contact</a> </li>
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
-    <!-- this is the floating background panel that contains the main page -->
-    <div class="bg-image parallax">
     
-        <!-- begin main page content 'floating' above footer -->
-        
-
-        <div class="container-fluid splash">
-            <div class="row ">
-                <div  class="welcome-deets col-md-2 col-md-offset-2">
-                    <h2 class="fuzzier">Cody Gipson</h2>
-                </div>     
-                <div class="col-md-4">
-                    <div class="welcomewrap">
-                        <div class="welcome"></div>
-                    </div>
-                </div>
-                <div class="welcome-deets col-md-2">
-                    <h3 class="fuzzier">Developer<small style="color: inherit;"> in Austin Texas </small></h3>
-                </div>
-                <div class="col-md-2 col-sm-12" style="margin-bottom:50px"></div> 
-            </div>
-        </div> <!-- end intro area -->
-
-        
-
-        <div id="about" class="nav-fix container-fluid background-panel">
-            <h1 class= "title-line fuzz">About Me</h1> 
-            <hr>
-            <p class="fuzz">I'm a web application developer based in Austin Texas.  I am comfortable and experienced in Ruby and Ruby on Rails, Javascript, as well as HTML/CSS, and also enjoy working with python and various web frameworks. I have a natural attraction to the possibilities and complexities that come with working on the backend of a project, as well a passion for making impactful and functional products on the front end side of projects.  I am currently looking for a full time developer position in the local Austin metro that will both challenge me and offer opportunity for growth. In my free time I enjoy rebuilding vintage motorcycles and spending time outside with my family.</p>
-        </div><!-- end about me -->
-        
-        <div id="examples" class="nav-fix background-panel container-fluid">
-            <h1 class="title-line fuzz">Example Applications</h1>
-            <hr>
-            <div class="app col-md-4 col-md-offset-2">
-                <a href="https://sleepy-fjord-79942.herokuapp.com"><img src="images/Texas.png" alt="website screenshot" class="app-wrap"></a>
-                <div class="appdetails">
-                    <div class="app-title text-center">
-                        <h1>Texas Historical Markers</h1>
-                    </div>
-                    <ul class="fuzz">
-                        <li><a href="https://sleepy-fjord-79942.herokuapp.com">Click here to see it running on Heroku</a></li>
-                        <li>12k+ Historical Markers searchable and displayed inside google maps</li>
-                        <li>Searchable by location using HTML5 Geolocation or Google reverse geocoding </li>
-                        <li>Secured API endpoint @ /api/geo, returns XML or JSON when provided a valid access token</li>
-                        <li>Data provided by the State of Texas, which I converted from UTM to GPS</li>
-                        <li>Ruby on Rails and PostgreSQL</li>
-                    </ul>
-                </div>
-            </div>       
-            <div class="app col-md-4">
-                <a href="http://www.atxgreenbelt.com"><img src="images/Greenbelt.png"  alt="website screenshot"  class="app-wrap"></a>
-                <div class="appdetails">
-                    <div class="app-title text-center">
-                        <h1>ATX Greenbelt</h1>
-                    </div>
-                    <ul class="fuzz">
-                        <li><a href="http://www.atxgreenbelt.com">Click here to see it at www.ATXgreenbelt.com</a></li>
-                        <li>Utilizes USGS water API for current condition @ Barton Creek Greenbelt</li>
-                        <li>Instagram photos of swimming locations via <a href="http://websta.me/">websta.me</a></li>
-                        <li>Medium and Large screen navigation via <a href="http://wheelnavjs.softwaretailoring.net/index.html">WheelNav.js</a></li>
-                        <li>Charting of USGS data via <a href="http://www.highcharts.com/">Highcharts.js</a></li>
-                        <li>JavaScript + JQuery + Bootstrap</li>
-                    </ul>
-                </div>    
-            </div><!-- end col-md-6 -->
-                 
-            <div class="app col-md-4">
-                <a href="https://arcane-shore-4106.herokuapp.com/"><img src="images/flightbooker_preview.png" alt="website screenshot"  class="app-wrap"></a>
-                <div class="appdetails">
-                    <div class="app-title text-center">
-                        <h1>Flight Booker</h1>
-                    </div>
-                    <ul class="fuzz">
-                        <li><a href="https://arcane-shore-4106.herokuapp.com/">Click here to see it running at Heroku</a></li>
-                        <li>Demonstration of User flow and advanced forms</li>
-                        <li>PostgreSQL</li>
-                        <li>Ruby on Rails</li>
-                        <li><a href="http://github.com/cgipson06/flightbooker">View Code on GitHub Here</a></li>
-                    </ul>
-                </div>
-            </div>  <!-- end col-md-4 -->
-                        
-            <div class="app col-md-4">
-                <a href="http://vast-forest-5750.herokuapp.com/"><img src="images/odin-facebook_preview.png" alt="website screenshot" class="app-wrap"></a>
-                <div class="appdetails"> 
-                    <div class="app-title text-center">
-                        <h1>Facebook clone</h1>
-                    </div>
-                    <ul class="fuzz">
-                        <li><a href="http://vast-forest-5750.herokuapp.com/">Click here to see it running at Heroku</a></li>
-                        <li>Backend focused clone with minimal styling</li>
-                        <li>Authenticated users w/email confirmation, profiles, posts, comments, likes, friend requests and friends</li>
-                        <li>PostgreSQL</li>
-                        <li>Ruby on Rails</li> 
-                        <li>Utilizes Amazon s3 asset storage</li>
-                        <li>Login integration with the actual Facebook using Omniauth </li>
-                        <li><a href="http://github.com/cgipson06/odin-facebook">View Code on GitHub Here</a></li>
-                    </ul>
-                </div>
-            </div><!-- end col-md-4 -->
-               
-            <div class=" app col-md-4">
-                <a href="http://protected-caverns-3592.herokuapp.com/"><img src="images/FaceAPIPlayground.png" alt="website screenshot" class="app-wrap"></a>
-                <div class="appdetails">     
-                    <div class="app-title text-center">
-                        <h1>FaceAPI Playground</h1>
-                    </div>    
-                    <ul class="fuzz">
-                        <li><a href="http://protected-caverns-3592.herokuapp.com/">Click here to see it running at Heroku</a></li>
-                        <li>Emotional Analysis of Photo with Microsoft Project Oxford Face and Emotion API's</li>
-                        <li>PostgreSQL</li>
-                        <li>Ruby on Rails</li>
-                        <li>Utilizes Amazon s3 asset storage</li>
-                        <li>Graph of Emotions with Google Chart API</li>
-                        <li><a href="https://github.com/Cgipson06/Oxford-playground">View Code on GitHub Here</a></li>
-                    </ul>
-                </div>
-            </div><!-- end col-md-4 -->
-        </div> <!--  end examples -->        
-
-        <div id="resume" class="resume container-fluid fuzz background-panel nav-fix">
-            <h1 class="title-line">Experience</h1>
-            <div class="text-center resume">
-                <hr>      
-                <p>
-                   <strong class="app-title">Jul 2011 – Aug 2013 Whole Foods Market – Austin Metro Guest Service Associate Team Leader</strong>
-                </p>
-                <ul>
-                    <li>Lead a team of 35 in a highly customer-facing role</li>
-                    <li>Developed and led various training programs for both junior team members and associates</li>
-                    <li>Responsible for screening and interviewing job candidates</li>
-                    <li>Responsible for mentorship of junior team members</li>
-                    <li>Expert at scheduling as well as  budget maintenance</li>
-                </ul>
-                <hr>          
-                <p>
-                <strong class="app-title">Mar 2007- Jul 2011 Whole Foods Market Lamar- Guest Services Supervisor</strong>
-                </p>
-                <ul>
-                    <li>Excelled in all customer service positions, including Guest Service Booth, Concierge team, and Delivery team </li>
-                    <li>Management responsibilities included scheduling and tracking a team of 130+ team members with 5 sub teams</li>
-                </ul>
-                <hr>
-                <p>
-                    <strong class="app-title">Aug 2005 - Nov 2006 American Bingo Austin TX - Assistant Manager</strong>
-                </p>
-                <ul>
-                    <li>Team management included motivation, counseling and scheduling of 15 employees</li>
-                    <li>Asset management for an inventory of 20,000+ items </li>
-                    <li>Responsibilities included marketing, purchasing, development and execution of new sales strategies in compliance with TX Lottery Commission Rules </li>
-                </ul>
-                <hr>
-            </div>
-             
-        </div>  <!-- end  resume -->
-
-                  
-        
-        <div id="contact" class="container fuzz background-panel">
-            <h1 class="text-left title-line">Contact Me</h1>
-            <hr>
-            <p>Thanks for checking me out! I welcome and value any comments you may have.</p>
-            <form action="//formspree.io/Cgipson06@Yahoo.com" method="POST" class="contactform">
-                <input type="email" name="_replyto" size="30" placeholder="Your Email is Optional"> 
-                <br>
-                <textarea  name="name" placeholder="Leave me a message here" rows="3" cols="30" ></textarea>
-                <br>
-                <input type="submit" value="Send">
-            </form> 
-        </div>    <!-- end contact -->  
-        
-    </div>   <!-- end floating background panel and main content -->
     
-    <div id="footer" class="navbar-inverse background-panel">      
-        <div class="github pull-left">
-            <a target="_blank" href="http://www.github.com/cgipson06"><img  class="github-logo contact-me-icon" src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
+    <!-- Floating background panel that contains the main page -->
+    <div class="parallax">
+    
+        <!-- Background Image -->
+        <div class="bg-image peffect parallax__layer parallax__layer--back">
+            <img class="background-sizer" src="images/stars2.jpg" alt="background image">
         </div>
         
-        <div class="email pull-right"><a target="_blank" href="mailto:Cgipson06@Yahoo.com"><span class="glyphicon glyphicon-envelope contact-me-icon"></span></a></div>
-        <div class="text-center linkedin contact-me-icon"><a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba"><img src="images/Logo-White-54px-TM.png" alt="linkedin logo"></a></div>
+        <!-- Begin main content -->
+        <div class="parallax__layer parallax__layer--base">
+            
+            
+            <section id="cody" class="container-fluid splash">
+                <div class="row">
+                    <div  class="welcome col-md-6 col-md-offset-3 text-center">
+                        <h1 class="heading-bolder">
+                            <span class="clarity">Cody Gipson</span>
+                        </h1>
+                        <h2 class="heading-boldish">
+                            <span class="clarity">Developer<small style="color: inherit;"> in Austin Texas </small></span>
+                        </h2>             
+                    </div>
 
-    </div><!-- end footer -->
-          
+                </div>
+            </section> <!-- end intro area -->
 
+        
 
+            <section id="about" class="nav-fix">
+                <div class="container-fluid content-panel ">
+                    <h1 class= "title-line">About Me</h1> 
+                    <hr>
+                    <p class="lead">I'm a web application developer based in Austin Texas. Comfortable and experienced in Ruby, Ruby on Rails, Javascript/jQuery, as well as HTML and CSS.      
+                    I have a natural attraction to the possibilities and complexities that come with the backend of a project, as well a passion for making impactful and functional products on the front end.</p>
+                    <div class="row intro-img-container">
+                        <div class="col-sm-1 col-sm-offset-2 col-xs-offset-1"><img class="intro-img" src="images/ruby.png"></div>
+                        <div class="col-sm-1 col-sm-offset-2 col-xs-offset-4" ><img class="intro-img" src="images/rails.png"></div>
+                        <div class="col-sm-1 col-sm-offset-2 col-xs-offset-7 "><img class="intro-img" src="images/js.jpg"></div>
+                    
+                     
+                    
+                    </div>
+                            </div>
+            </section><!-- end about me -->
+            
+            <section id="examples" class="nav-fix" >
+                
+                <div class="content-panel container-fluid">
+                    <h1 class="title-line">Example Applications</h1>
+                    <hr>
+                    
+                    
+                    <div class="col-md-6 ">
+                        <div class="app">
+                            <a href="https://sleepy-fjord-79942.herokuapp.com"><img src="images/Texas.png" alt="website screenshot" class="app-photo-wrap"></a>
+                            <div class="appdetails">
+                                <h1 class="app-title text-center">Texas Historical Markers</h1>
+                                <ul class="fuzz">
+                                    <li><a href="https://sleepy-fjord-79942.herokuapp.com" title="Apps that are sleeping may take 30 seconds to spin up">Click here to see it running on Heroku</a></li>
+                                    <li>12k+ Historical Markers searchable and displayed inside google maps</li>
+                                    <li>Searchable by location using HTML5 Geolocation or Google reverse geocoding </li>
+                                    <li>Data provided by the State of Texas, which I converted from UTM to GPS</li>
+                                    <li>Ruby on Rails and PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end col-md-6 -->
+                    
+                    
+                    <div class="col-md-6">
+                        <div class="app">
+                            <a href="http://www.atxgreenbelt.com" ><img src="images/Greenbelt.png"  alt="website screenshot"  class="app-photo-wrap"></a>
+                            <div class="appdetails">
+                                <h1 class="app-title text-center">ATX Greenbelt</h1>
+                                
+                                <ul class="fuzz">
+                                    <li><a href="http://www.atxgreenbelt.com">Click here to see it at www.ATXgreenbelt.com</a></li>
+                                    <li>Utilizes USGS water API for current condition @ Barton Creek Greenbelt</li>
+                                    <li>Medium and Large screen navigation via <a href="http://wheelnavjs.softwaretailoring.net/index.html">WheelNav.js</a></li>
+                                    <li>Charting of USGS data via <a href="http://www.highcharts.com/">Highcharts.js</a></li>
+                                    <li>JavaScript + JQuery + Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end col-md-6 -->
+                         
+                    <div class="col-md-4">
+                        <div class="app">
+                            <a href="https://arcane-shore-4106.herokuapp.com/"><img src="images/flightbooker_preview.png" alt="website screenshot"  class="app-photo-wrap"></a>
+                            <div class="appdetails">
+                                <h1 class="app-title text-center">Flight Booker</h1>
+                                <ul class="fuzz">
+                                    <li><a href="https://arcane-shore-4106.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up">Click here to see it running at Heroku</a></li>
+                                    <li>Demonstration of User flow and advanced forms</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Ruby on Rails</li>
+                                    <li><a href="http://github.com/cgipson06/flightbooker">View Code on GitHub Here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>  <!-- end col-md-4 -->
+                                
+                    <div class="col-md-4">
+                        <div class="app">
+                            <a href="http://vast-forest-5750.herokuapp.com/"><img src="images/odin-facebook_preview.png" alt="website screenshot" class="app-photo-wrap"></a>
+                            <div class="appdetails"> 
+                                <h1 class="app-title text-center">Facebook clone</h1>
+                                
+                                <ul class="fuzz">
+                                    <li><a href="http://vast-forest-5750.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up">Click here to see it running at Heroku</a></li>
+                                    <li>Backend focused clone with minimal styling</li>
+                                    <li>Authenticated users w/email confirmation, profiles, posts, comments, likes, friend requests and friends</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Ruby on Rails</li> 
+                                    <li>Utilizes Amazon s3 asset storage</li>
+                                    <li>Login integration with the actual Facebook using Omniauth </li>
+                                    <li><a href="http://github.com/cgipson06/odin-facebook">View Code on GitHub Here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end col-md-4 -->
+                       
+                    <div class="col-md-4">
+                        <div class="app">
+                            <a href="http://protected-caverns-3592.herokuapp.com/"><img src="images/FaceAPIPlayground.png" alt="website screenshot" class="app-photo-wrap"></a>
+                            <div class="appdetails">     
+                                <h1 class="app-title text-center">FaceAPI Playground</h1> 
+                                <ul class="fuzz">
+                                    <li><a href="http://protected-caverns-3592.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up">Click here to see it running at Heroku</a></li>
+                                    <li>Emotional Analysis of Photo with Microsoft Project Oxford Face and Emotion API's</li>
+                                    <li>PostgreSQL</li>
+                                    <li>Ruby on Rails</li>
+                                    <li>Utilizes Amazon s3 asset storage</li>
+                                    <li>Graph of Emotions with Google Chart API</li>
+                                    <li><a href="https://github.com/Cgipson06/Oxford-playground">View Code on GitHub Here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- end col-md-4 -->
+                </div> <!--  end examples content panel -->        
+            </section><!-- end example section -->
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-74208213-2', 'auto');
-      ga('send', 'pageview');
-
-    </script>
+            <section id="contact" class="nav-fix">
+                <h1 class="title-line">Contact Me</h1>
+                <p class="lead">Thanks for checking me out! Click below to connect.</p>
+                <div>
+                    <a target="_blank" href="http://www.github.com/cgipson06"><img src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba"><img src="images/In-White-59px-TM.png" alt="linkedin logo"></a>
+                </div>
+                <div>
+                    <a target="_blank" href="mailto:Cgipson06@Yahoo.com"><span class="glyphicon glyphicon-envelope contact-me-icon"></span></a>
+                </div>
+            </section><!-- end contact -->  
+        </div>   <!-- end parallax__layer parallax__layer--base -->
+    </div>
     
     <!-- close the collapsed-navbar after click -->
     <script>
@@ -243,28 +205,7 @@
         });
     </script>
     
-    <!-- parallax effect for desktop browsers, works best in firefox -->
-    <script>
-    (function(){
 
-
-
-    var parallax = document.querySelectorAll(".parallax"), speed = 0.35;
-
-    window.onscroll = function(){
-        [].slice.call(parallax).forEach(function(el,i){
-            var windowYOffset = window.pageYOffset,
-                elBackgrounPos = "50% " + (windowYOffset * speed ) + "px";
-
-            if ($(window).width() >= 1024){
-              el.style.backgroundPosition = elBackgrounPos;
-            }
-
-        });
-    };
-
-    })();
-    </script>
     
   </body>
 </html>
