@@ -96,7 +96,7 @@ p.lead {
 
 /* each individual apps container */
 .app {
-    min-height: 600px;
+    min-height: 675px;
     border-radius:10px;
     margin:15px 20px;
     padding:15px 15px;
