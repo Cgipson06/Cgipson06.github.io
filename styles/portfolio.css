@@ -1,68 +1,58 @@
 /* general element styles */
-
-html, body {
-    width:100%;
-    overflow-x:hidden;
-}
-
 body {
-
-  font-family: 'Raleway', sans-serif;
-  background-color:black;
-  color:white;
-
+    font-family: 'Raleway', sans-serif;
+    background-color:black;
+    color:white;
 }
+
 hr{
     border: 2px solid black;
 }
+
 /* consistant list styling across browsers */
-li
-{
+li  {
     list-style-position:inside;
 }
 
+a  {
+    color: inherit;
+}
 
+h1 {
+    font-size:70px;
+}
 
+h2 {
+    font-size:45px;
+}
 
+/* dots before nav links */
+.nav > li > a::before {
+    content:'\00B7';
+    padding-right:5px;
+}
 
-/* Position Landing Area  */
+/* Position Landing Area,  */
 .splash {
     min-height:100vh;
     padding-top:40vh;
 }
+
  /* help text stand out on image background */
 .clarity {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(10,10,10,.6);
     line-height: 1.2;
     border-radius:5px;
-}
-
-.heading-bolder {
-    font-weight:900;
-    font-size:70px;
-    }
-.heading-boldish {
-    font-size:45px;
-    font-weight:900;
-    
-}
-
-.personal-image {
-    height: 200px;
-    float:left;
-}
-
-
-
-/* upping the title of each section */
-.title-line {
-    font-size: 45px;
     font-weight:700;
+    display:inline;
+}
+
+.clarity > small{
+    color: inherit;
 }
 
 /* colored content background panel */
 .content-panel {
-  z-index:2;
   background-color:rgba(10, 10, 10,.9);
   border: 2px solid black; 
   margin-bottom:50vh;
@@ -75,35 +65,27 @@ li
     padding-top:50px;
 }
 
-
-p.lead {
+.lead {
     margin-top:30px;
     margin-bottom:30px;
 }
 
-
-
-
-
-
 /* each individual apps container */
 .app {
-    min-height: 675px;
     border-radius:10px;
-    margin:15px 20px;
-    padding:15px 15px;
 }
+
 .app:hover {
-        background-color: #222;
-        transition:1.5s;
-        border: 1px solid black;
+    background-color: #222;
+    transition:1.5s;
+    border: 1px solid black;
 }
+
 
 .app-title {
     background-color: white;
     color: black;
-    margin: 20px;
-    padding: 0;
+    margin: 50px 20px 20px 20px;
     border-radius: 4px;
     font-weight: bold;
 }
@@ -111,79 +93,49 @@ p.lead {
 /* Main Photo portion of app containers */
 .app-photo-wrap{
     background-color:lightgrey;
-    width: 90%;
+    width: 95%;
     border-radius: 4px;
-    padding: 10px;
-    margin: 20px 5%;
+    padding: 3px;
+    margin: 20px 2.5%;
     transition:.5s ease-out;
 }
+
 .app-photo-wrap:hover {
     background-color:white;
     transition:.5s ease-in;
-    }
-
-/*Main text area of app containers */
-.appdetails {
-    margin-top: 30px;
-}
-/* no link coloring */
-.appdetails ul li a {
-    color: inherit;
 }
 
-.app-sm-photo {
-    width:100px;
+.contact {
+    padding: 15px;
+    margin-top:-50px;
+    padding-top:50px;
 }
 
-
-
-#contact {
-  padding: 15px;
-  margin-top:100px;
-  margin-bottom:200px;
-}
-
-
-#contact > div {
-    display:inline-block;
+.contact-icon{
+    transition: .5s ease-in-out;
     margin:30px;
-    margin-top:100px;
 }
 
-
-#contact > div > a {
-    height:100%;
+.contact-icon:hover {
+     transform:scale(1.1);   
 }
-
-#contact> div > a > *{
-    transform: scale(.8);
-    transition: 1s ease-in-out;
-}
-
-#contact >div:hover > a > * {
-     transform:scale(1.15) translateX(20px);
-     transition:1s ease-in-out;
-     
-}
-#contact>div>a>img {
-}
-
-
-
  
 /* make email icon white and larger */
- span.glyphicon-envelope {
+ .glyphicon-envelope {
     font-size: 65px;
     color: white;
-    top:30px!important;
+    top:30px;
 }
+
 /* parallax background and foreground classes */
 .parallax {
   perspective: 1px;
   height:100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
+
 .parallax__layer {
   position: absolute;
   top: 0;
@@ -191,24 +143,20 @@ p.lead {
   bottom: 0;
   left: 0;
 }
+
 .parallax__layer--base {
   transform: translateZ(0);
-
 }
+
 .parallax__layer--back {
   transform: translateZ(-1px) scale(2);
 }
+
 .background-sizer {
     width:100%;
     min-width:1000px;
-  }
-  
-/* background filler for mobile  */
-.parallax {
-        background-image:url('../images/black.png');
 }
-
-
-
-
-
+/* space out rows a bit */
+.row::after {
+    margin-bottom:20px;
+}
