@@ -111,8 +111,7 @@
                             <a target="_blank"  href="http://vast-forest-5750.herokuapp.com/" onclick="trackOutboundLink('http://vast-forest-5750.herokuapp.com/'); return false;"><img src="images/odin-facebook_preview.png" alt="website screenshot" class="app-photo-wrap"></a>
                             <h3 class="app-title text-center">Facebook clone</h3>            
                             <ul>
-                                <li><a target="_blank" href="http://vast-forest-5750.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up" onclick="trackOutboundLink('http://vast-forest-5750.herokuapp.com/'); return false;">Click here to see it running at Heroku</a></li>
-                                <li>Backend focused clone with minimal styling</li>
+                                <li><a target="_blank" href="http://vast-forest-5750.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up" onclick="trackOutboundLink('http://vast-forest-5750.herokuapp.com/'); return false;">Click here to spin it up at Heroku</a></li>
                                 <li>Authenticated users w/email confirmation, profiles, posts, comments, likes, friend requests and friends</li>
                                 <li>PostgreSQL</li>
                                 <li>Ruby on Rails</li> 
@@ -126,7 +125,7 @@
                             <a target="_blank"  href="http://protected-caverns-3592.herokuapp.com/" onclick="trackOutboundLink('http://protected-caverns-3592.herokuapp.com/'); return false;"><img src="images/FaceAPIPlayground.png" alt="website screenshot" class="app-photo-wrap"></a> 
                             <h3 class="app-title text-center">FaceAPI Playground</h3> 
                             <ul>
-                                <li><a target="_blank" href="http://protected-caverns-3592.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up" onclick="trackOutboundLink('http://protected-caverns-3592.herokuapp.com/'); return false;">Click here to see it running at Heroku</a></li>
+                                <li><a target="_blank" href="http://protected-caverns-3592.herokuapp.com/" title="Apps that are sleeping may take 30 seconds to spin up" onclick="trackOutboundLink('http://protected-caverns-3592.herokuapp.com/'); return false;">Click here to spin it up at Heroku</a></li>
                                 <li>Emotional Analysis of Photo with Microsoft Project Oxford Face and Emotion API's</li>
                                 <li>PostgreSQL</li>
                                 <li>Ruby on Rails</li>
@@ -142,8 +141,8 @@
             <section id="contact" class="contact nav-fix">
                 <h2>Contact Me</h2>
                 <p>Thanks for checking me out! Click below to connect.</p>
-                <a target="_blank" href="http://www.github.com/cgipson06" onclick="trackOutboundLink('http://www.github.com/cgipson06'); return false;">><img  class="contact-icon" src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba" onclick="trackOutboundLink('https://www.linkedin.com/in/cody-gipson-766249ba'); return false;">><img class="contact-icon" src="images/In-White-59px-TM.png" alt="linkedin logo"></a>
+                <a target="_blank" href="http://www.github.com/cgipson06" onclick="trackOutboundLink('http://www.github.com/cgipson06'); return false;"><img  class="contact-icon" src="images/GitHub-Mark-Light-64px.png" alt="github logo"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/cody-gipson-766249ba" onclick="trackOutboundLink('https://www.linkedin.com/in/cody-gipson-766249ba'); return false;"><img class="contact-icon" src="images/In-White-59px-TM.png" alt="linkedin logo"></a>
                 <a target="_blank" href="mailto:Cgipson06@Yahoo.com"><span class="contact-icon glyphicon glyphicon-envelope"></span></a>
             </section><!-- end contact -->  
         </div>   <!-- end parallax__layer  and base -->
@@ -156,15 +155,12 @@
 
         ga('create', 'UA-74208213-2', 'auto');
         ga('send', 'pageview');
-
-    </script>
-    <script>
         var trackOutboundLink = function(url) {
             ga('send', 'event', 'outbound', 'click', url, {
             'transport': 'beacon',
             'hitCallback': function(){document.location = url;}
             });
         }
-    </script>    
+    </script>
   </body>
 </html>

@@ -158,5 +158,5 @@ h2 {
 }
 /* space out rows a bit */
 .row::after {
-    margin-bottom:20px;
+    margin-bottom:50px;
 }
