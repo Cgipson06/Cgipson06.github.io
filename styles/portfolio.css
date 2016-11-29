@@ -73,6 +73,7 @@ h2 {
 /* each individual apps container */
 .app {
     border-radius:10px;
+    border: 1px solid rgba(0,0,0,0);
 }
 
 .app:hover {
@@ -81,6 +82,9 @@ h2 {
     border: 1px solid black;
 }
 
+.carousel {
+    margin-top: 20px;
+}
 
 .app-title {
     background-color: white;
